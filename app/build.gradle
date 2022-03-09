@@ -1,14 +1,15 @@
 plugins {
     id 'com.android.application'
 }
-
+/*apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'*/
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.example.soulmate"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion 19
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -37,4 +38,8 @@ dependencies {
     implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:3.0.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
 }
